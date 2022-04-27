@@ -40,12 +40,13 @@ function confirm(){
 }
 
 
-
+let movie = document.getElementById("movie");
 arr.map(function (arr){
+  
   
   let each_div = document.createElement("div");
 
-  each_div.innerText = "";
+  movie.innerText = "";
 let image = document.createElement("img");
 image.src = arr.Poster;
 // image.setAttribute("id","image")
@@ -55,6 +56,7 @@ title.innerText = `Title: ${arr.Title}`;
 
 each_div.append(image, title);
 
-document.querySelector("#movie").append(each_div);
+movie.append(each_div);
+// document.querySelector("#movie").append(each_div);
 })
   
